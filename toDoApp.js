@@ -36,7 +36,7 @@ function getInfosFromLocalStorage() {
             <i class="fas fa-times close"></i>
         </li>`;
         ul.innerHTML += listItem;
-        counter.textContent = index == -1 ? counterNumber++ : counterNumber;
+        counter.textContent = index == -1 ? ++counterNumber : counterNumber;
 
     }
     closeBtns = [...document.querySelectorAll("i.close")];
