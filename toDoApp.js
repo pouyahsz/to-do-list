@@ -117,6 +117,7 @@ function removeItem() {
             }
             ul.removeChild(lis[i]);
             localStorageItems.splice(i, 1);
+
             localStorage.setItem("todos", localStorageItems);
             lis.splice(i, 1);
             closeBtns.splice(i, 1);
