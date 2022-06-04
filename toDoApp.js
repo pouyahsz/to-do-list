@@ -24,8 +24,8 @@ input.focus();
 function getInfosFromLocalStorage() {
     if (localStorage.length !== 0) {
         localStorageItems = [...localStorage.getItem("todos").split(',')];
+        if(localStorage.length >1)
         localStorageStatuses = [...localStorage.getItem("done").split(',')];
-        console.log(localStorageStatuses)
 
     }
     for (let item of localStorageItems) {
